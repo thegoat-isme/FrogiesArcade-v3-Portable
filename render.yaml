@@ -4,7 +4,8 @@ services:
   name: my-type-is-the-bag
   runtime: node
   repo: https://github.com/FrogiesArcade/FrogiesArcade-v3-Portable
-  plan: free
+  plan: starter
+  public: true
   region: oregon
   buildCommand: npm i
   startCommand: node index.js
