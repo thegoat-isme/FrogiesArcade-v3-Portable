@@ -1,12 +1,8 @@
-# Exported from Render on 2024-04-20T17:23:49Z
 services:
-- type: web
-  name: my-type-is-the-bag
-  runtime: node
-  repo: https://github.com/FrogiesArcade/FrogiesArcade-v3-Portable
-  plan: starter
-  public: true
-  region: oregon
-  buildCommand: npm i
-  startCommand: node index.js
-version: "1"
+  - type: web
+    name: my-type-is-the-bag
+    runtime: node # or your specific runtime
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    # No 'repo' field needed if it's in the same repository
+
